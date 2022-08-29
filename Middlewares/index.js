@@ -8,7 +8,7 @@ app.use(middlewares1)    // USE is for middlewares as this comes in action execu
 app.use(middlewares2)    // line no.17 via ignoring all the code written before middlewares function.
 
 app.get("/users",(req,res) => {
-    console.log("Iam working after middlewares and arrow function will not be executed");
+    console.log("Iam working after middlewares, and arrow function will not be executed");
     return res.send("hello ronapp")
 })
 
@@ -33,3 +33,12 @@ function middlewares2(req, res, next) {
 app.listen(3000, ()=>{
     console.log("listening on port 3000")
 });
+
+
+// think this all in the execution context output will be like this;
+
+// First middleware are running
+// Second middleware are running       
+// Iam working after middlewares and arrow function will not be executed   
+// middleTwo over
+// middleOne over

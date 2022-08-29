@@ -13,7 +13,7 @@ app.get("/users",(req,res) => {
 })
 
 // Middlewares are like brokers we can say they can alter the REQUEST or RESPONSE.
-// accepts 3 props - REQ,RES,NEXT.
+// IMPORTANT [accepts 3 props - REQ,RES,NEXT].
 
 function middlewares1(req, res, next) {
     console.log("First middleware are running");

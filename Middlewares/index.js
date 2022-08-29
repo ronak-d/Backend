@@ -19,3 +19,8 @@ function middlewares(req, res, next) {
     next();     // this next() will give execution of code just after whrere middlewares() app.USE called.
                 // line no.9 to 12.
 }
+
+
+app.listen(8080, ()=>{
+    console.log("listening on port 8080")
+})

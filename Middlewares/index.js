@@ -40,8 +40,8 @@ app.listen(3000, ()=>{
 // First middleware are running
 // Second middleware are running       
 // Iam working after middlewares and arrow function will not be executed   
-// middleTwo over
-// middleOne over
+// middleTwo 2 over
+// middleOne 1 over
 
 
 // 1:30 repeat

@@ -5,7 +5,7 @@ const app = express();
 // eg => get + /users
 
 app.use(middlewares1)    // USE is for middlewares as this comes in action execution of code goes to 
-app.use(middlewares2)    // line no.17 via ignoring all the code written before middlewares function.
+app.use(middlewares2)    // line no.18 via ignoring all the code written before middlewares function.
 
 app.get("/users",(req,res) => {
     console.log("Iam working after middlewares, and arrow function will not be executed");
